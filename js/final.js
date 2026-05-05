@@ -42,7 +42,7 @@ async function sendEmail(saidYes) {
             headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer YOUR_RESEND_API_KEY' },
             body: JSON.stringify({
                 from: 'Valentine Game <onboarding@resend.dev>',
-                to: 'havishpgupta@gmail.com',
+                to: 'your_email@example.com',
                 subject: saidYes ? 'She said YES!!!' : 'She said no...',
                 html: saidYes
                     ? '<h1>Great news! She said YES!</h1><p>Time to celebrate!</p>'

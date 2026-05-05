@@ -11,9 +11,8 @@ function startCongratsAnimation() {
     xE.textContent=msgs[i].m;xE.style.animation='none';xE.offsetHeight;xE.style.animation='floatIn .8s ease';i++;setTimeout(next,2500);})();
 }
 function initOffer() {
-    const hobbies=['- A F1 Fan','- A Gamer','- An Animator','- A Programmer','- An Avgeek','- A Space Enthusiast','- Your Secret Admirer','- Havish'];
-    let hi=0; const me=document.getElementById('offer-me');
-    setInterval(()=>{hi=(hi+1)%hobbies.length;me.style.opacity='0';me.style.transform='translateY(10px)';setTimeout(()=>{me.textContent=hobbies[hi];me.style.opacity='1';me.style.transform='translateY(0)';},400);},3000);
+    const me=document.getElementById('offer-me');
+    if (me) me.textContent = `- ${CONFIG.yourName}`;
     let nc=0; const yb=document.getElementById('btn-yes'),nb=document.getElementById('btn-no');
     const yt=['Yes!','Yes!! <3','YESSS!!!','YESSSSS!!!!','PLEASE YES!!!!!'];
     const nt=['No','Are you sure?','Pretty please?','Think again...','Last chance!!'];

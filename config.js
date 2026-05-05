@@ -1,14 +1,14 @@
 const CONFIG = {
     // 1. The name of your crush (the person you are sending this to)
-    crushName: "HAVISH",
-    
+    crushName: "Crush's Name",
+
     // 2. Your name or how you want to sign off
-    yourName: "A F1 Fan",
-    
+    yourName: "Your Name",
+
     // 3. Your contact info
     phoneNumber: "+91 XXXXXXXXXX",
     instagramHandle: "@your_insta",
-    
+
     // 4. Any special offer or message you want to show on the date page
     dateOfferText: "Would you go on a date with me?",
 

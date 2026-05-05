@@ -1,40 +1,55 @@
-# CrushConfession 💖
+# Crush Confession 💖
 
-A super simple, highly customizable, interactive mini-game and web page to confess to your crush or ask them out on a date!
+A fun, interactive mini-game web page to confess to your crush or ask them out!
 
-## How to Customize 🛠️
+---
 
-You don't need to know any coding to customize this template! 
+## 🛠️ Step 1: How to Add Your Details
 
-1. Open the `js` folder and find the file named `config.js`.
-2. Open `config.js` in any text editor (like Notepad, TextEdit, or VS Code).
-3. Inside, you will see a few variables. Just change the text inside the quotation marks `""` to match your details:
-   - **`crushName`**: The name of your crush (e.g., `"EMMA"` or `"HAVISH"`).
-   - **`yourName`**: How you want to sign off (e.g., `"Your Secret Admirer"`).
-   - **`phoneNumber`**: Your phone number to show at the end.
-   - **`instagramHandle`**: Your Instagram handle.
-   - **`dateOfferText`**: The big question! (e.g., `"Would you go on a date with me?"`).
-   - **`finalMessage`**: The personalized message they will read at the end.
+You do **not** need to know how to code! Just follow these steps:
 
-4. Save the file! 
+1. Open this folder and look for a file named **`config.js`**. (It is right here in the main folder).
+2. Right-click on **`config.js`** and choose **Open With -> Notepad** (or any other text editor).
+3. Inside, you will see some text wrapped in quotation marks `""`. **Only change the text inside the quotes.**
+   - `crushName`: Type your crush's name here.
+   - `yourName`: Type your name here.
+   - `phoneNumber`: Type your phone number here.
+   - `instagramHandle`: Type your Instagram here.
+   - `dateOfferText`: Type the question you want to ask them (like "Will you go out with me?").
+   - `finalMessage`: Type a nice message for them to read at the end.
+4. Go to **File -> Save** (or press Ctrl+S) and close Notepad.
 
-## How to Test Locally 💻
+---
 
-Just double-click on `index.html` to open it in your web browser. You can play through the game to make sure everything looks right!
+## 💻 Step 2: Test It Yourself
 
-## How to Deploy (Make it Public) 🚀
+Want to see how it looks?
+1. Find the file named **`index.html`** in this folder.
+2. Double-click it. It will open in your web browser. 
+3. Play the game to make sure everything looks perfect!
 
-### Method 1: Vercel (Super Simple)
-1. Go to [Vercel](https://vercel.com/) and create a free account.
-2. Click on **Add New...** -> **Project**.
-3. You can either link your GitHub account or just drag and drop the entire `CrushConfession` folder directly into the Vercel dashboard.
-4. Vercel will upload your files and give you a public link (URL) that you can share with your crush!
+---
 
-### Method 2: GitHub Pages
-1. Go to [GitHub](https://github.com/) and sign in.
-2. Create a new repository and upload all these files into it.
-3. Once uploaded, go to the repository **Settings** -> **Pages**.
-4. Under "Build and deployment", select the `main` branch and click **Save**.
-5. Wait a few minutes, and GitHub will provide you with a live link!
+## 🚀 Step 3: Send It To Your Crush
+
+To send this to your crush, it needs to be on the internet (not just on your computer). Here is the easiest way to do it for free:
+
+### The Vercel Method (Easiest - Takes 2 Minutes)
+1. Go to **[Vercel.com](https://vercel.com/)** and click **Sign Up** to make a free account.
+2. Once you are logged in, you will see a big button that says **Add New...** -> Click it and select **Project**.
+3. Now, open your computer's file explorer. Grab the entire **CrushConfession** folder and **drag and drop** it directly into the Vercel webpage where it says "Drag and drop your project here".
+4. Vercel will process the files for a few seconds.
+5. When it's done, it will give you a **public link** (a URL).
+6. Copy that link and send it to your crush!
+
+### The GitHub Method (Alternative)
+1. Go to **[GitHub.com](https://github.com/)** and make a free account.
+2. Click the **+** icon at the top right and click **New Repository**.
+3. Give it a name (like "my-game"), scroll down, and click **Create repository**.
+4. Click on **"uploading an existing file"** near the top.
+5. Drag and drop ALL the files from this folder into the webpage and click **Commit changes**.
+6. After uploading, click on **Settings** (at the top), then click on **Pages** (on the left menu).
+7. Under "Build and deployment" -> "Branch", click where it says **None**, change it to **main**, and click **Save**.
+8. Wait about 3-5 minutes, refresh the page, and GitHub will show you the live web link!
 
 Good luck! 🍀
