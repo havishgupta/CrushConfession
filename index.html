@@ -63,7 +63,7 @@
         <div class="rules-bg"><div class="rules-container">
             <h1 class="rules-title">Rules of the Game</h1>
             <div class="rules-list">
-                <div class="rule-item"><div class="rule-icon"><svg width="32" height="32" viewBox="0 0 32 32"><path d="M16 4c-2 0-4 2-4 4v2c-2 0-6 2-6 8v6h20v-6c0-6-4-8-6-8V8c0-2-2-4-4-4z" fill="#d4763a"/><ellipse cx="16" cy="5" rx="3" ry="2" fill="#e88848"/><rect x="12" y="16" width="8" height="2" rx="1" fill="#c06030"/></svg></div><div class="rule-text"><h3>Find the Vases</h3><p><strong>6 hidden vases</strong> are in a 2-story house. Open cupboards and break boxes!</p></div></div>
+                <div class="rule-item"><div class="rule-icon"><svg width="32" height="32" viewBox="0 0 32 32"><path d="M16 4c-2 0-4 2-4 4v2c-2 0-6 2-6 8v6h20v-6c0-6-4-8-6-8V8c0-2-2-4-4-4z" fill="#d4763a"/><ellipse cx="16" cy="5" rx="3" ry="2" fill="#e88848"/><rect x="12" y="16" width="8" height="2" rx="1" fill="#c06030"/></svg></div><div class="rule-text"><h3>Find the Vases</h3><p><strong class="vase-total-count">6</strong> hidden vases are in a 2-story house. Open cupboards and break boxes!</p></div></div>
                 <div class="rule-item"><div class="rule-icon"><svg width="32" height="32" viewBox="0 0 32 32"><circle cx="16" cy="16" r="13" fill="none" stroke="#ff6b6b" stroke-width="2.5"/><line x1="16" y1="8" x2="16" y2="16" stroke="#ff6b6b" stroke-width="2.5" stroke-linecap="round"/><line x1="16" y1="16" x2="22" y2="16" stroke="#ff6b6b" stroke-width="2" stroke-linecap="round"/></svg></div><div class="rule-text"><h3>40 Minute Limit</h3><p>The clock is ticking!</p></div></div>
                 <div class="rule-item"><div class="rule-icon"><svg width="32" height="32" viewBox="0 0 32 32"><rect x="4" y="8" width="24" height="16" rx="2" fill="none" stroke="#87CEEB" stroke-width="2"/><rect x="6" y="10" width="20" height="12" rx="1" fill="#1a3a5c"/><rect x="10" y="24" width="12" height="2" rx="1" fill="#87CEEB"/></svg></div><div class="rule-text"><h3>Desktop / Tablet</h3><p>Best on desktop. Tablet supported with touch controls!</p></div></div>
                 <div class="rule-item"><div class="rule-icon"><svg width="32" height="32" viewBox="0 0 32 32"><path d="M16 6l-2 3-3.5.5 2.5 2.5-.6 3.5L16 14l3.1 1.5-.6-3.5 2.5-2.5-3.5-.5z" fill="#ff6b8a"/><path d="M8 14l-1 2-2.5.3 1.8 1.8-.4 2.5L8 19.5l2.1 1.1-.4-2.5 1.8-1.8-2.5-.3z" fill="#ff6b8a" opacity=".6"/><path d="M24 14l-1 2-2.5.3 1.8 1.8-.4 2.5L24 19.5l2.1 1.1-.4-2.5 1.8-1.8-2.5-.3z" fill="#ff6b8a" opacity=".6"/><text x="16" y="28" text-anchor="middle" font-size="8" font-weight="bold" fill="#ff6b8a">x3</text></svg></div><div class="rule-text"><h3>3 Lives</h3><p>Night monsters will take your lives!</p></div></div>
@@ -85,7 +85,7 @@
                         <span class="heart"><svg width="20" height="20" viewBox="0 0 20 20"><path d="M10 18s-7-5-7-10a4 4 0 0 1 7-1 4 4 0 0 1 7 1c0 5-7 10-7 10z" fill="#ff4466"/></svg></span>
                         <span class="heart"><svg width="20" height="20" viewBox="0 0 20 20"><path d="M10 18s-7-5-7-10a4 4 0 0 1 7-1 4 4 0 0 1 7 1c0 5-7 10-7 10z" fill="#ff4466"/></svg></span>
                     </div>
-                    <div class="hud-vases" id="hud-vases"><svg width="14" height="14" viewBox="0 0 16 16"><path d="M8 1c-1 0-2 1-2 2v1c-1.5 0-3.5 1-3.5 5v3h11v-3c0-4-2-5-3.5-5V3c0-1-1-2-2-2z" fill="#d4763a"/></svg> <span id="vase-count">0</span>/6</div>
+                    <div class="hud-vases" id="hud-vases"><svg width="14" height="14" viewBox="0 0 16 16"><path d="M8 1c-1 0-2 1-2 2v1c-1.5 0-3.5 1-3.5 5v3h11v-3c0-4-2-5-3.5-5V3c0-1-1-2-2-2z" fill="#d4763a"/></svg> <span id="vase-count">0</span>/<span class="vase-total-count">6</span></div>
                 </div>
                 <div class="hud-center"><div class="hud-timer" id="hud-timer">40:00</div><div class="hud-daynight" id="hud-daynight">Day</div></div>
                 <div class="hud-right"><div class="hud-floor" id="hud-floor">Ground Floor</div><div class="hud-hint" id="hud-hint">Explore the house!</div></div>
@@ -100,7 +100,7 @@
             <!-- Vase Found Popup -->
             <div class="vase-found-popup hidden" id="vase-found-popup">
                 <p class="vfp-title">Vase Found!</p>
-                <p class="vfp-count">1/6</p>
+                <p class="vfp-count">1/<span class="vase-total-count">6</span></p>
                 <p class="vfp-msg">Keep looking!</p>
             </div>
             <!-- Note -->
@@ -113,7 +113,7 @@
             <div class="tutorial-popup hidden" id="tutorial-popup"><div class="tutorial-box">
                 <div class="tutorial-icon"><svg width="48" height="48" viewBox="0 0 48 48"><path d="M24 6c-3 0-5 2-5 4v3c-3 0-7 2-7 10v8h24v-8c0-8-4-10-7-10V10c0-2-2-4-5-4z" fill="#d4763a"/><ellipse cx="24" cy="8" rx="4" ry="3" fill="#e88848"/><rect x="19" y="25" width="10" height="2" rx="1" fill="#c06030"/><circle cx="23" cy="4" r="2.5" fill="#ff6b8a"/></svg></div>
                 <h3>Find the Vases!</h3>
-                <p>Search every room. Find all <strong>6 vases</strong> to unlock the next part!</p>
+                <p>Search every room. Find all <strong class="vase-total-count">6</strong> vases to unlock the next part!</p>
                 <p class="tutorial-hint">Look in cupboards and break boxes!</p>
                 <button id="tutorial-close" class="btn-magical"><span>Got it!</span><div class="btn-sparkle"></div></button>
             </div></div>
@@ -134,12 +134,7 @@
     <div id="screen-vase-anim" class="screen hidden"><div class="vase-anim-bg">
         <h2 class="vase-anim-title">You found all the vases!</h2>
         <div class="vases-row" id="vases-row">
-            <div class="vase-box" data-letter="H"><div class="vase-sprite"><svg width="36" height="44" viewBox="0 0 40 48"><path d="M20 4c-3 0-5 2-5 4v3c-4 0-9 3-9 14v8h28v-8c0-11-5-14-9-14V8c0-2-2-4-5-4z" fill="#d4763a"/><ellipse cx="20" cy="6" rx="5" ry="3" fill="#e88848"/><rect x="13" y="27" width="14" height="3" rx="1" fill="#c06030"/></svg></div></div>
-            <div class="vase-box" data-letter="A"><div class="vase-sprite"><svg width="36" height="44" viewBox="0 0 40 48"><path d="M20 4c-3 0-5 2-5 4v3c-4 0-9 3-9 14v8h28v-8c0-11-5-14-9-14V8c0-2-2-4-5-4z" fill="#d4763a"/><ellipse cx="20" cy="6" rx="5" ry="3" fill="#e88848"/><rect x="13" y="27" width="14" height="3" rx="1" fill="#c06030"/></svg></div></div>
-            <div class="vase-box" data-letter="V"><div class="vase-sprite"><svg width="36" height="44" viewBox="0 0 40 48"><path d="M20 4c-3 0-5 2-5 4v3c-4 0-9 3-9 14v8h28v-8c0-11-5-14-9-14V8c0-2-2-4-5-4z" fill="#d4763a"/><ellipse cx="20" cy="6" rx="5" ry="3" fill="#e88848"/><rect x="13" y="27" width="14" height="3" rx="1" fill="#c06030"/></svg></div></div>
-            <div class="vase-box" data-letter="I"><div class="vase-sprite"><svg width="36" height="44" viewBox="0 0 40 48"><path d="M20 4c-3 0-5 2-5 4v3c-4 0-9 3-9 14v8h28v-8c0-11-5-14-9-14V8c0-2-2-4-5-4z" fill="#d4763a"/><ellipse cx="20" cy="6" rx="5" ry="3" fill="#e88848"/><rect x="13" y="27" width="14" height="3" rx="1" fill="#c06030"/></svg></div></div>
-            <div class="vase-box" data-letter="S"><div class="vase-sprite"><svg width="36" height="44" viewBox="0 0 40 48"><path d="M20 4c-3 0-5 2-5 4v3c-4 0-9 3-9 14v8h28v-8c0-11-5-14-9-14V8c0-2-2-4-5-4z" fill="#d4763a"/><ellipse cx="20" cy="6" rx="5" ry="3" fill="#e88848"/><rect x="13" y="27" width="14" height="3" rx="1" fill="#c06030"/></svg></div></div>
-            <div class="vase-box" data-letter="H"><div class="vase-sprite"><svg width="36" height="44" viewBox="0 0 40 48"><path d="M20 4c-3 0-5 2-5 4v3c-4 0-9 3-9 14v8h28v-8c0-11-5-14-9-14V8c0-2-2-4-5-4z" fill="#d4763a"/><ellipse cx="20" cy="6" rx="5" ry="3" fill="#e88848"/><rect x="13" y="27" width="14" height="3" rx="1" fill="#c06030"/></svg></div></div>
+            <!-- Dynamically generated -->
         </div>
         <p class="vase-anim-sub" id="vase-anim-sub">Watch closely...</p>
     </div></div>

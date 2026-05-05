@@ -7,6 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Update rules and hints
     const wordleCount = document.getElementById('wordle-letter-count');
     if (wordleCount) wordleCount.textContent = len;
+    
+    document.querySelectorAll('.vase-total-count').forEach(el => el.textContent = len);
+    
     const ruleText = document.querySelector('.rule-text p strong');
     if (ruleText) ruleText.textContent = `${len} hidden vases`;
     const tutorialP = document.querySelector('#tutorial-popup p strong');

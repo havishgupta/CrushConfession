@@ -6,7 +6,7 @@ const T = {
     DRESSER:34,NIGHTSTAND:35,RUG:36,LAMP:37,CUPBOARD:40,BOX:41,VASE_VISIBLE:42,NOTE:43,
     COLLECTIBLE:44,WALL_TOP:45,ROOF:46,PATH:47,FLOWER:48,TREE:49,WINDOW:50,POOL_VASE:51
 };
-const SOLID_TILES = new Set([T.WALL,T.FENCE,T.POOL,T.SOFA,T.TABLE,T.TV,T.BED,T.DESK,T.COUNTER,T.BOOKSHELF,T.TOILET,T.BATHTUB,T.PLANT,T.FRIDGE,T.SINK,T.STOVE,T.DRESSER,T.NIGHTSTAND,T.LAMP,T.CUPBOARD,T.BOX,T.WALL_TOP,T.TREE,T.WINDOW]);
+const SOLID_TILES = new Set([T.WALL,T.FENCE,T.SOFA,T.TABLE,T.TV,T.BED,T.DESK,T.COUNTER,T.BOOKSHELF,T.TOILET,T.BATHTUB,T.PLANT,T.FRIDGE,T.SINK,T.STOVE,T.DRESSER,T.NIGHTSTAND,T.LAMP,T.CUPBOARD,T.BOX,T.WALL_TOP,T.TREE,T.WINDOW]);
 // POOL_VASE is NOT solid - player walks into pool to collect it
 // DOOR removed from interactive - doors are just walkable now
 const INTERACTIVE_TILES = new Set([T.CUPBOARD,T.BOX,T.VASE_VISIBLE,T.NOTE,T.STAIRS_UP,T.STAIRS_DOWN,T.POOL_VASE]);
@@ -85,12 +85,12 @@ const UPPER_FLOOR = [
 // Generate VASE_LOCATIONS dynamically based on config length
 let VASE_LOCATIONS = [];
 const baseLocations = [
-    { floor:0, x:25, y:4, type:'pool', id:'v1' },
-    { floor:0, x:13, y:12, type:'visible', id:'v2' },
-    { floor:0, x:19, y:12, type:'cupboard', id:'v3' },
-    { floor:0, x:8, y:17, type:'box', id:'v4' },
-    { floor:1, x:10, y:17, type:'visible', id:'v5' },
-    { floor:1, x:19, y:12, type:'cupboard', id:'v6' },
+    { floor:0, x:7, y:12, type:'visible', id:'v1' },
+    { floor:0, x:17, y:10, type:'visible', id:'v2' },
+    { floor:0, x:12, y:12, type:'visible', id:'v3' },
+    { floor:0, x:10, y:20, type:'visible', id:'v4' },
+    { floor:1, x:10, y:18, type:'visible', id:'v5' },
+    { floor:1, x:8, y:13, type:'visible', id:'v6' },
 ];
 const needed = CONFIG.yourName.replace(/\s/g, '').length;
 for (let i = 0; i < needed; i++) {
