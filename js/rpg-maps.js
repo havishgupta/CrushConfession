@@ -92,7 +92,7 @@ const baseLocations = [
     { floor:1, x:10, y:17, type:'visible', id:'v5' },
     { floor:1, x:19, y:12, type:'cupboard', id:'v6' },
 ];
-const needed = CONFIG.crushName.replace(/\s/g, '').length;
+const needed = CONFIG.yourName.replace(/\s/g, '').length;
 for (let i = 0; i < needed; i++) {
     const base = baseLocations[i % baseLocations.length];
     VASE_LOCATIONS.push({ ...base, id: 'v' + (i + 1) });

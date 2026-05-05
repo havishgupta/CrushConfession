@@ -1,5 +1,5 @@
 /* Wordle - updated text */
-const WORDLE_ANSWER=()=>CONFIG.crushName.toUpperCase().replace(/\s/g, ''); let wordleState=null;
+const WORDLE_ANSWER=()=>CONFIG.yourName.toUpperCase().replace(/\s/g, ''); let wordleState=null;
 function initWordle(){
     const answer = WORDLE_ANSWER();
     wordleState={currentRow:0,currentCol:0,maxRows:5,maxCols:answer.length,guesses:[],currentGuess:'',gameOver:false};

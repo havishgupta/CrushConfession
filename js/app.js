@@ -2,9 +2,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Populate dynamic texts from CONFIG
     document.querySelectorAll('.highlight-name').forEach(el => el.textContent = CONFIG.crushName);
-    const len = CONFIG.crushName.replace(/\s/g, '').length;
+    const len = CONFIG.yourName.replace(/\s/g, '').length;
     
     // Update rules and hints
+    const wordleCount = document.getElementById('wordle-letter-count');
+    if (wordleCount) wordleCount.textContent = len;
     const ruleText = document.querySelector('.rule-text p strong');
     if (ruleText) ruleText.textContent = `${len} hidden vases`;
     const tutorialP = document.querySelector('#tutorial-popup p strong');
