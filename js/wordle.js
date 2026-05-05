@@ -1,10 +1,11 @@
 /* Wordle - updated text */
-const WORDLE_ANSWER=()=>CONFIG.crushName.toUpperCase(); let wordleState=null;
+const WORDLE_ANSWER=()=>CONFIG.crushName.toUpperCase().replace(/\s/g, ''); let wordleState=null;
 function initWordle(){
-    wordleState={currentRow:0,currentCol:0,maxRows:5,maxCols:CONFIG.crushName.length,guesses:[],currentGuess:'',gameOver:false};
+    const answer = WORDLE_ANSWER();
+    wordleState={currentRow:0,currentCol:0,maxRows:5,maxCols:answer.length,guesses:[],currentGuess:'',gameOver:false};
     
     // Update wordle hint
-    const letters = CONFIG.crushName.split('');
+    const letters = answer.split('');
     const shuffled = [...letters].sort(() => Math.random() - 0.5);
     document.getElementById('letter-jumble').textContent = shuffled.join(', ').toUpperCase();
     

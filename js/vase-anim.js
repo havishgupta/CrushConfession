@@ -1,6 +1,6 @@
 /* ============ VASE BREAKING ANIMATION ============ */
 function startVaseAnimation() {
-    const letters = CONFIG.crushName.split('');
+    const letters = CONFIG.crushName.replace(/\s/g, '').split('');
     // Shuffle for display
     const shuffled = [...letters].sort(() => Math.random() - 0.5);
     

@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Populate dynamic texts from CONFIG
     document.querySelectorAll('.highlight-name').forEach(el => el.textContent = CONFIG.crushName);
-    const len = CONFIG.crushName.length;
+    const len = CONFIG.crushName.replace(/\s/g, '').length;
     
     // Update rules and hints
     const ruleText = document.querySelector('.rule-text p strong');
