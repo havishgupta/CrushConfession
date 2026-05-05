@@ -29,18 +29,18 @@ const GROUND_FLOOR = [
 [F,G,G,G,G,PT,G,G,PT,G,G,G,G,G,G,G,G,G,G,G,G,G,PE,P,P,P,P,P,PE,G,G,CO,G,G,F],
 [F,G,G,G,G,PT,PT,PT,PT,G,G,G,G,G,G,G,G,G,G,G,G,G,PE,PE,PE,PE,PE,PE,PE,G,G,G,G,G,F],
 [F,G,NO,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,F],
-[F,G,G,G,WT,WT,WT,WT,WT,WT,WT,WT,WT,WT,WT,WT,WT,WT,WT,WT,WT,WT,WT,WT,WT,G,G,G,G,G,G,G,G,F],
-[F,G,G,G,WA,W,W,W,W,W,W,W,W,WN,WA,TI,TI,SK,CT,CT,ST,WN,WA,WA,WA,G,G,G,G,G,G,G,G,F],
-[F,G,G,G,WA,W,SO,SO,SO,W,W,W,W,W,WA,TI,TI,TI,TI,TI,FR,W,WA,G,G,G,G,G,PL,G,G,G,G,F],
-[F,G,G,G,WA,W,W,W,W,W,TB,TB,W,W,D,TI,CH,TB,CH,TI,TI,W,WA,G,G,G,G,G,G,G,G,G,G,F],
-[F,G,G,G,WN,W,W,CH,W,W,W,W,W,VV,WA,TI,TI,TI,TI,CB,TI,W,WA,G,G,G,G,G,G,G,G,NO,G,F],
-[F,G,G,G,WA,W,W,W,TV,W,W,W,W,W,WA,WA,WA,WA,WA,D,WA,WA,WA,G,G,G,G,G,G,G,G,G,G,F],
-[F,G,G,G,WA,W,W,W,W,W,W,W,W,W,W,W,W,W,W,PA,PA,PA,PA,PA,PA,G,G,G,G,G,G,G,G,F],
-[F,G,G,G,WA,W,W,W,W,W,W,W,W,W,WA,WA,D,WA,WA,WA,WA,WA,WA,G,G,G,G,G,G,G,G,G,G,F],
-[F,G,G,G,WA,W,SU,W,W,W,W,W,W,W,WA,TI,TI,TI,TI,TI,BK,WN,WA,G,G,G,G,G,G,G,G,G,G,F],
-[F,G,G,G,WA,W,W,W,BX,W,W,NO,W,W,WA,TI,TI,DK,CH,TI,BK,W,WA,G,G,G,G,G,G,G,G,G,G,F],
-[F,G,G,G,WA,W,W,W,W,W,W,W,W,W,WA,TI,TI,TI,TI,NO,TI,W,WA,G,G,G,G,G,G,G,G,G,G,F],
-[F,G,G,G,WA,WA,WA,WA,WA,D,WA,WA,WA,WA,WA,WA,WA,WA,WA,WA,WA,WA,WA,G,G,G,G,G,G,G,G,G,G,F],
+[F,G,G,G,WT,WT,WT,WT,WT,WT,WT,WT,WT,WT,WT,WT,WT,WT,WT,WT,WT,WT,WT,WT,WT,G,G,G,G,G,G,G,G,G,F],
+[F,G,G,G,WA,W,W,W,W,W,W,W,W,WN,WA,TI,TI,SK,CT,CT,ST,WN,WA,WA,WA,G,G,G,G,G,G,G,G,G,F],
+[F,G,G,G,WA,W,SO,SO,SO,W,W,W,W,W,WA,TI,TI,TI,TI,TI,FR,W,WA,G,G,G,G,G,G,PL,G,G,G,G,F],
+[F,G,G,G,WA,W,W,W,W,W,TB,TB,W,W,D,TI,CH,TB,CH,TI,TI,W,WA,G,G,G,G,G,G,G,G,G,G,G,F],
+[F,G,G,G,WN,W,W,CH,W,W,W,W,W,VV,WA,TI,TI,TI,TI,CB,TI,W,WA,G,G,G,G,G,G,G,G,G,NO,G,F],
+[F,G,G,G,WA,W,W,W,TV,W,W,W,W,W,WA,WA,WA,WA,WA,D,WA,WA,WA,G,G,G,G,G,G,G,G,G,G,G,F],
+[F,G,G,G,WA,W,W,W,W,W,W,W,W,W,W,W,W,W,W,PA,PA,PA,PA,PA,PA,G,G,G,G,G,G,G,G,G,F],
+[F,G,G,G,WA,W,W,W,W,W,W,W,W,W,WA,WA,D,WA,WA,WA,WA,WA,WA,G,G,G,G,G,G,G,G,G,G,G,F],
+[F,G,G,G,WA,W,SU,W,W,W,W,W,W,W,WA,TI,TI,TI,TI,TI,BK,WN,WA,G,G,G,G,G,G,G,G,G,G,G,F],
+[F,G,G,G,WA,W,W,W,BX,W,W,NO,W,W,WA,TI,TI,DK,CH,TI,BK,W,WA,G,G,G,G,G,G,G,G,G,G,G,F],
+[F,G,G,G,WA,W,W,W,W,W,W,W,W,W,WA,TI,TI,TI,TI,NO,TI,W,WA,G,G,G,G,G,G,G,G,G,G,G,F],
+[F,G,G,G,WA,WA,WA,WA,WA,D,WA,WA,WA,WA,WA,WA,WA,WA,WA,WA,WA,WA,WA,G,G,G,G,G,G,G,G,G,G,G,F],
 [F,G,G,G,G,G,G,G,PA,PA,PA,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,F],
 [F,G,G,G,G,G,G,G,G,PT,G,G,G,G,G,G,G,G,G,CO,G,G,G,G,G,G,G,G,G,G,G,G,G,G,F],
 [F,G,BX,G,G,G,G,G,G,PT,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,G,F],
@@ -82,21 +82,27 @@ const UPPER_FLOOR = [
 [_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_],
 ];
 
-// Generate VASE_LOCATIONS dynamically based on config length
-let VASE_LOCATIONS = [];
-const baseLocations = [
-    { floor:0, x:7, y:12, type:'visible', id:'v1' },
-    { floor:0, x:17, y:10, type:'visible', id:'v2' },
-    { floor:0, x:12, y:12, type:'visible', id:'v3' },
-    { floor:0, x:10, y:20, type:'visible', id:'v4' },
-    { floor:1, x:10, y:18, type:'visible', id:'v5' },
-    { floor:1, x:8, y:13, type:'visible', id:'v6' },
+// Total vases needed = number of non-space characters in yourName
+const TOTAL_VASES = CONFIG.yourName.replace(/\s/g, '').length;
+
+// All actual vase locations in the map — matched to real tile positions
+// The map has these interactable vase sources:
+//   Floor 0: VV at (13,12), PV at (25,4), CB at (19,12), BX at (8,17), BX at (2,22)
+//   Floor 1: VV at (10,17), CB at (19,12), BX at (19,18)
+// That gives us 8 possible vase locations. We pick as many as needed for the name.
+const ALL_VASE_LOCATIONS = [
+    { floor:0, x:13, y:12, type:'visible', id:'v1' },     // VV tile in living room
+    { floor:0, x:25, y:4,  type:'pool',    id:'v2' },     // PV tile in pool
+    { floor:0, x:19, y:12, type:'cupboard', id:'v3' },    // CB tile in kitchen
+    { floor:0, x:8,  y:17, type:'box',     id:'v4' },     // BX tile in hallway
+    { floor:1, x:10, y:17, type:'visible', id:'v5' },     // VV tile in bedroom 2
+    { floor:1, x:19, y:12, type:'cupboard', id:'v6' },    // CB tile in bathroom
+    { floor:0, x:2,  y:22, type:'box',     id:'v7' },     // BX tile in garden
+    { floor:1, x:19, y:18, type:'box',     id:'v8' },     // BX tile in study
 ];
-const needed = CONFIG.yourName.replace(/\s/g, '').length;
-for (let i = 0; i < needed; i++) {
-    const base = baseLocations[i % baseLocations.length];
-    VASE_LOCATIONS.push({ ...base, id: 'v' + (i + 1) });
-}
+
+// Use only as many vase locations as letters in the name (capped at 8)
+const VASE_LOCATIONS = ALL_VASE_LOCATIONS.slice(0, Math.min(TOTAL_VASES, ALL_VASE_LOCATIONS.length));
 
 const NOTE_CONTENTS = [
     "Something tells me you're close...",
@@ -106,7 +112,7 @@ const NOTE_CONTENTS = [
     "Some boxes hide secrets...",
 ];
 const NOTE_LOCATIONS = [
-    {floor:0,x:2,y:7},{floor:0,x:11,y:17},{floor:0,x:19,y:18},{floor:0,x:31,y:12},{floor:0,x:6,y:23},{floor:1,x:11,y:17},
+    {floor:0,x:2,y:7},{floor:0,x:11,y:17},{floor:0,x:19,y:18},{floor:0,x:32,y:12},{floor:0,x:6,y:23},{floor:1,x:11,y:17},
 ];
 const COLLECTIBLE_ITEMS = [
     {floor:0,x:31,y:5,name:'Hammer',desc:'Breaks boxes instantly'},
@@ -121,11 +127,20 @@ const STAIRS = [
 const MAPS = [GROUND_FLOOR, UPPER_FLOOR];
 const MAP_W = 35; const MAP_H = 28; const TILE_SIZE = 32;
 
-const PROGRESS_HINTS = [
-    "Explore the house! Look for vases nearby.",
-    "Nice! Check inside the rooms...",
-    "Try the upper floor too!",
-    "Look near the pool area!",
-    "Break some boxes open!",
-    "One more to go! Search everywhere!",
-];
+const PROGRESS_HINTS = [];
+// Generate dynamic progress hints based on total vases
+(function() {
+    const hints = [
+        "Explore the house! Look for vases nearby.",
+        "Nice! Check inside the rooms...",
+        "Try the upper floor too!",
+        "Look near the pool area!",
+        "Break some boxes open!",
+        "Check the cupboards!",
+        "Almost there! Search everywhere!",
+        "One more to go!",
+    ];
+    for (let i = 0; i <= TOTAL_VASES; i++) {
+        PROGRESS_HINTS.push(hints[i % hints.length] || `Find all ${TOTAL_VASES} vases!`);
+    }
+})();

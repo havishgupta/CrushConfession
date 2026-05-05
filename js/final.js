@@ -1,7 +1,8 @@
-/* Final page with celebration image and better message */
+/* Final page with celebration image — removed insecure client-side email */
 function initFinalPage() {
     initScratchCards();
-    sendEmail(true);
+    // Note: Email notification removed — it exposed API keys client-side.
+    // To get notified, use a backend service or serverless function instead.
 }
 
 function initScratchCards() {
@@ -33,21 +34,4 @@ function initScratchCards() {
         canvas.addEventListener('touchmove', (e) => { scratch(e); e.preventDefault(); });
         canvas.addEventListener('touchend', () => isDrawing = false);
     });
-}
-
-async function sendEmail(saidYes) {
-    try {
-        await fetch('https://api.resend.com/emails', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer YOUR_RESEND_API_KEY' },
-            body: JSON.stringify({
-                from: 'Valentine Game <onboarding@resend.dev>',
-                to: 'your_email@example.com',
-                subject: saidYes ? 'She said YES!!!' : 'She said no...',
-                html: saidYes
-                    ? '<h1>Great news! She said YES!</h1><p>Time to celebrate!</p>'
-                    : '<h1>Noooooo</h1><p>She said no... Better luck next time.</p>'
-            })
-        });
-    } catch (e) { console.log('Email requires backend/API key setup:', e); }
 }

@@ -1,13 +1,13 @@
 const CONFIG = {
     // 1. The name of your crush (the person you are sending this to)
-    crushName: "Crush's Name",
+    crushName: "Special Someone",
     
     // 2. Your name or how you want to sign off
-    yourName: "Your Name",
+    yourName: "HAVISH",
     
     // 3. Your gender (set to "male" or "female")
     // This changes how your character looks in the game!
-    gender: "female",
+    gender: "male",
     
     // 4. Your contact info
     phoneNumber: "+91 XXXXXXXXXX",

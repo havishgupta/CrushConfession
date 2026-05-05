@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.highlight-name').forEach(el => el.textContent = CONFIG.crushName);
     const len = CONFIG.yourName.replace(/\s/g, '').length;
     
-    // Update rules and hints
+    // Update rules and hints with dynamic vase count
     const wordleCount = document.getElementById('wordle-letter-count');
     if (wordleCount) wordleCount.textContent = len;
     
@@ -19,9 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const vfpCount = document.querySelector('.vfp-count');
     if (vfpCount) vfpCount.textContent = `1/${len}`;
     
-    // Offer and Final Page
-    const offerMe = document.getElementById('offer-me');
-    if (offerMe) offerMe.textContent = `- ${CONFIG.yourName}`;
+    // Offer and Final Page — don't set offer-me here, initOffer() handles it with hobby rotation
     const offerQuestion = document.querySelector('.offer-question');
     if (offerQuestion) offerQuestion.textContent = CONFIG.dateOfferText;
     const phoneValue = document.getElementById('phone-value');

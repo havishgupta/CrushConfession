@@ -177,20 +177,20 @@ function handleInteract() {
 
 function showVasePopup() {
     const el=document.getElementById('vase-found-popup'); el.classList.remove('hidden');
-    el.querySelector('.vfp-count').textContent=`${rpgState.vasesFound}/6`;
-    el.querySelector('.vfp-msg').textContent=rpgState.vasesFound>=6?'All found!':PROGRESS_HINTS[rpgState.vasesFound]||'Keep looking!';
+    el.querySelector('.vfp-count').textContent=`${rpgState.vasesFound}/${TOTAL_VASES}`;
+    el.querySelector('.vfp-msg').textContent=rpgState.vasesFound>=TOTAL_VASES?'All found!':PROGRESS_HINTS[rpgState.vasesFound]||'Keep looking!';
     setTimeout(()=>el.classList.add('hidden'), 2200);
 }
 
 function updateProgressHint() {
-    document.getElementById('hud-hint').textContent=PROGRESS_HINTS[rpgState.vasesFound]||'Find all 6 vases!';
+    document.getElementById('hud-hint').textContent=PROGRESS_HINTS[rpgState.vasesFound]||`Find all ${TOTAL_VASES} vases!`;
 }
 
 function showNote(text){rpgState.showingNote=true;rpgState.paused=true;document.getElementById('note-text').textContent=text;document.getElementById('note-display').classList.remove('hidden');}
 function closeNote(){if(!rpgState.showingNote)return;rpgState.showingNote=false;rpgState.paused=false;document.getElementById('note-display').classList.add('hidden');}
 
 function checkAllVases() {
-    if(rpgState.vasesFound>=6){rpgState.gameOver=true;clearInterval(rpgState.timerInterval);cancelAnimationFrame(rpgState.animFrame);
+    if(rpgState.vasesFound>=TOTAL_VASES){rpgState.gameOver=true;clearInterval(rpgState.timerInterval);cancelAnimationFrame(rpgState.animFrame);
     document.removeEventListener('keydown',rpgState._keyDown);document.removeEventListener('keyup',rpgState._keyUp);
     setTimeout(()=>{showScreen('screen-vase-anim');startVaseAnimation();},1500);}
 }
