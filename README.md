@@ -22,11 +22,13 @@ You do **not** need to know how to code! Just follow these steps:
 1. In your extracted folder, look for a file named **`config.js`**.
 2. Right-click on **`config.js`** and choose **Open With -> Notepad** (or any other text editor).
 3. Inside, you will see some text wrapped in quotation marks `""`. **Only change the text inside the quotes.**
-   - `crushName`: Type your crush's name here. *(Note: The game automatically adjusts! Whether their name is 4 letters or 9 letters, the number of vases to find and the final Wordle game will match their name perfectly!)*
-   - `yourName`: Type your name here.
+   - `crushName`: Type your crush's name here.
+   - `yourName`: Type your name here. *(Note: The game automatically adjusts! Whether your name is 4 letters or 9 letters, the number of vases to find and the final Wordle game will match your name perfectly!)*
+   - `gender`: Set this to `"male"` or `"female"`. This changes how your character looks in the game!
    - `phoneNumber`: Type your phone number here.
    - `instagramHandle`: Type your Instagram here.
    - `dateOfferText`: Type the question you want to ask them (like "Will you go out with me?").
+   - `hobbies`: This is a list of your skills or hobbies (like `["A F1 Fan", "A Gamer"]`). They will rotate on the "Special Offer" page!
    - `finalMessage`: Type a nice message for them to read at the end.
 4. Go to **File -> Save** (or press Ctrl+S) and close Notepad.
 

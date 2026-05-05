@@ -265,38 +265,64 @@ function render() {
         ctx.beginPath(); ctx.moveTo(sx+14,sy+2); ctx.lineTo(sx+18,sy-4); ctx.lineTo(sx+10,sy+2); ctx.fill();
     });
 
-    // GIRL CHARACTER
+    // CHARACTER RENDERING
     const px=player.x-camera.x, py=player.y-camera.y;
     ctx.fillStyle='rgba(0,0,0,0.15)'; ctx.beginPath(); ctx.ellipse(px+7,py+17,6,2.5,0,0,Math.PI*2); ctx.fill();
-    // Hair back
-    ctx.fillStyle='#4a2a10'; ctx.beginPath(); ctx.arc(px+7,py+3,6,0,Math.PI*2); ctx.fill();
-    ctx.fillRect(px+1,py+3,3,10); ctx.fillRect(px+10,py+3,3,10); // long hair sides
-    // Body/dress
-    ctx.fillStyle='#f8a5c2'; ctx.fillRect(px+2,py+6,10,7);
-    // Dress flare
-    ctx.fillStyle='#f090b0'; ctx.beginPath(); ctx.moveTo(px+1,py+13); ctx.lineTo(px+13,py+13);
-    ctx.lineTo(px+14,py+16); ctx.lineTo(px,py+16); ctx.closePath(); ctx.fill();
-    // Head
-    ctx.fillStyle='#ffe0c0'; ctx.beginPath(); ctx.arc(px+7,py+4,5,0,Math.PI*2); ctx.fill();
-    // Hair front
-    ctx.fillStyle='#5a3018'; ctx.beginPath(); ctx.arc(px+7,py+2,5,Math.PI,Math.PI*2); ctx.fill();
-    ctx.fillRect(px+2,py+1,10,2);
-    // Hair bow
-    ctx.fillStyle='#ff6b8a'; ctx.beginPath(); ctx.arc(px+11,py+2,2.5,0,Math.PI*2); ctx.fill();
-    // Eyes
-    ctx.fillStyle='#333';
-    if(player.dir===0){ctx.fillRect(px+4,py+3,2,2);ctx.fillRect(px+8,py+3,2,2);ctx.fillStyle='#fff';ctx.fillRect(px+4,py+3,1,1);ctx.fillRect(px+8,py+3,1,1);}
-    else if(player.dir===2){ctx.fillRect(px+5,py+5,2,2);ctx.fillRect(px+9,py+5,2,2);}
-    else if(player.dir===3){ctx.fillRect(px+3,py+4,2,2);ctx.fillRect(px+6,py+4,2,2);}
-    else{ctx.fillRect(px+7,py+4,2,2);ctx.fillRect(px+10,py+4,2,2);}
-    // Blush
-    ctx.fillStyle='rgba(255,150,150,0.4)'; ctx.beginPath(); ctx.arc(px+3,py+5,1.5,0,Math.PI*2); ctx.fill();
-    ctx.beginPath(); ctx.arc(px+11,py+5,1.5,0,Math.PI*2); ctx.fill();
-    // Legs
-    ctx.fillStyle='#ffe0c0'; const lo=Math.sin(player.frame*2)*2;
-    ctx.fillRect(px+3,py+16,3,2+lo); ctx.fillRect(px+8,py+16,3,2-lo);
-    // Shoes
-    ctx.fillStyle='#ff6b8a'; ctx.fillRect(px+2,py+17+(lo>0?lo:0),4,2); ctx.fillRect(px+7,py+17-(lo>0?0:lo),4,2);
+
+    if (CONFIG.gender === 'male') {
+        // BOY CHARACTER
+        // Hair back
+        ctx.fillStyle='#2a1a0a'; ctx.beginPath(); ctx.arc(px+7,py+3,5,0,Math.PI*2); ctx.fill();
+        // Body (Shirt)
+        ctx.fillStyle='#87CEEB'; ctx.fillRect(px+2,py+6,10,8);
+        // Head
+        ctx.fillStyle='#ffe0c0'; ctx.beginPath(); ctx.arc(px+7,py+4,5,0,Math.PI*2); ctx.fill();
+        // Hair front (spiky look)
+        ctx.fillStyle='#2a1a0a'; 
+        ctx.beginPath(); ctx.moveTo(px+2,py+2); ctx.lineTo(px+7,py+0); ctx.lineTo(px+12,py+2); ctx.lineTo(px+12,py+4); ctx.lineTo(px+2,py+4); ctx.closePath(); ctx.fill();
+        // Eyes
+        ctx.fillStyle='#333';
+        if(player.dir===0){ctx.fillRect(px+4,py+3,2,2);ctx.fillRect(px+8,py+3,2,2);}
+        else if(player.dir===2){ctx.fillRect(px+5,py+5,2,2);ctx.fillRect(px+9,py+5,2,2);}
+        else if(player.dir===3){ctx.fillRect(px+3,py+4,2,2);ctx.fillRect(px+6,py+4,2,2);}
+        else{ctx.fillRect(px+7,py+4,2,2);ctx.fillRect(px+10,py+4,2,2);}
+        // Legs
+        ctx.fillStyle='#2f3542'; const lo=Math.sin(player.frame*2)*2;
+        ctx.fillRect(px+3,py+14,3,3+lo); ctx.fillRect(px+8,py+14,3,3-lo);
+        // Shoes
+        ctx.fillStyle='#333'; ctx.fillRect(px+2,py+17+(lo>0?lo:0),4,2); ctx.fillRect(px+7,py+17-(lo>0?0:lo),4,2);
+    } else {
+        // GIRL CHARACTER
+        // Hair back
+        ctx.fillStyle='#4a2a10'; ctx.beginPath(); ctx.arc(px+7,py+3,6,0,Math.PI*2); ctx.fill();
+        ctx.fillRect(px+1,py+3,3,10); ctx.fillRect(px+10,py+3,3,10); // long hair sides
+        // Body/dress
+        ctx.fillStyle='#f8a5c2'; ctx.fillRect(px+2,py+6,10,7);
+        // Dress flare
+        ctx.fillStyle='#f090b0'; ctx.beginPath(); ctx.moveTo(px+1,py+13); ctx.lineTo(px+13,py+13);
+        ctx.lineTo(px+14,py+16); ctx.lineTo(px,py+16); ctx.closePath(); ctx.fill();
+        // Head
+        ctx.fillStyle='#ffe0c0'; ctx.beginPath(); ctx.arc(px+7,py+4,5,0,Math.PI*2); ctx.fill();
+        // Hair front
+        ctx.fillStyle='#5a3018'; ctx.beginPath(); ctx.arc(px+7,py+2,5,Math.PI,Math.PI*2); ctx.fill();
+        ctx.fillRect(px+2,py+1,10,2);
+        // Hair bow
+        ctx.fillStyle='#ff6b8a'; ctx.beginPath(); ctx.arc(px+11,py+2,2.5,0,Math.PI*2); ctx.fill();
+        // Eyes
+        ctx.fillStyle='#333';
+        if(player.dir===0){ctx.fillRect(px+4,py+3,2,2);ctx.fillRect(px+8,py+3,2,2);ctx.fillStyle='#fff';ctx.fillRect(px+4,py+3,1,1);ctx.fillRect(px+8,py+3,1,1);}
+        else if(player.dir===2){ctx.fillRect(px+5,py+5,2,2);ctx.fillRect(px+9,py+5,2,2);}
+        else if(player.dir===3){ctx.fillRect(px+3,py+4,2,2);ctx.fillRect(px+6,py+4,2,2);}
+        else{ctx.fillRect(px+7,py+4,2,2);ctx.fillRect(px+10,py+4,2,2);}
+        // Blush
+        ctx.fillStyle='rgba(255,150,150,0.4)'; ctx.beginPath(); ctx.arc(px+3,py+5,1.5,0,Math.PI*2); ctx.fill();
+        ctx.beginPath(); ctx.arc(px+11,py+5,1.5,0,Math.PI*2); ctx.fill();
+        // Legs
+        ctx.fillStyle='#ffe0c0'; const lo=Math.sin(player.frame*2)*2;
+        ctx.fillRect(px+3,py+16,3,2+lo); ctx.fillRect(px+8,py+16,3,2-lo);
+        // Shoes
+        ctx.fillStyle='#ff6b8a'; ctx.fillRect(px+2,py+17+(lo>0?lo:0),4,2); ctx.fillRect(px+7,py+17-(lo>0?0:lo),4,2);
+    }
 
     // Interact highlight
     if(rpgState.interactTarget){

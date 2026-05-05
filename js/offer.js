@@ -11,8 +11,23 @@ function startCongratsAnimation() {
     xE.textContent=msgs[i].m;xE.style.animation='none';xE.offsetHeight;xE.style.animation='floatIn .8s ease';i++;setTimeout(next,2500);})();
 }
 function initOffer() {
-    const me=document.getElementById('offer-me');
-    if (me) me.textContent = `- ${CONFIG.yourName}`;
+    const me = document.getElementById('offer-me');
+    if (me && CONFIG.hobbies && CONFIG.hobbies.length > 0) {
+        let hi = 0;
+        me.textContent = `- ${CONFIG.hobbies[0]}`;
+        setInterval(() => {
+            hi = (hi + 1) % CONFIG.hobbies.length;
+            me.style.opacity = '0';
+            me.style.transform = 'translateY(10px)';
+            setTimeout(() => {
+                me.textContent = `- ${CONFIG.hobbies[hi]}`;
+                me.style.opacity = '1';
+                me.style.transform = 'translateY(0)';
+            }, 400);
+        }, 1500); // Changed to 1.5s for a smoother feel, but user asked for "every second" (approx)
+    } else if (me) {
+        me.textContent = `- ${CONFIG.yourName}`;
+    }
     let nc=0; const yb=document.getElementById('btn-yes'),nb=document.getElementById('btn-no');
     const yt=['Yes!','Yes!! <3','YESSS!!!','YESSSSS!!!!','PLEASE YES!!!!!'];
     const nt=['No','Are you sure?','Pretty please?','Think again...','Last chance!!'];

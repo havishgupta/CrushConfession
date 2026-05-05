@@ -1,5 +1,5 @@
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-html,body{width:100%;height:100%;overflow:hidden;font-family:'Outfit',sans-serif;background:#1a0510;color:#fff}
+html,body{width:100%;height:100%;overflow:hidden;font-family:'Outfit',sans-serif;background:#050a14;color:#fff}
 .hidden{display:none!important}
 .screen{position:fixed;inset:0;z-index:1;transition:opacity .6s ease}
 .screen.active{display:flex}
@@ -19,7 +19,7 @@ html,body{width:100%;height:100%;overflow:hidden;font-family:'Outfit',sans-serif
 @keyframes popIn{from{transform:scale(.7);opacity:0}to{transform:scale(1);opacity:1}}
 
 /* SCROLL - PIRATE STYLE WITH CURLS */
-.scroll-bg{width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#4a1532,#380d22,#240a18);position:relative;overflow:hidden}
+.scroll-bg{width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#1a3a5c,#050a14,#1a3a5c);position:relative;overflow:hidden}
 .floating-hearts{position:absolute;inset:0;pointer-events:none}
 .scroll-container{position:relative;z-index:2;max-width:540px;width:90%;animation:scrollUnroll 1.5s ease}
 @keyframes scrollUnroll{from{transform:scaleY(.05);opacity:0}30%{transform:scaleY(.05);opacity:1}to{transform:scaleY(1);opacity:1}}
@@ -51,7 +51,7 @@ html,body{width:100%;height:100%;overflow:hidden;font-family:'Outfit',sans-serif
 @keyframes sparkle{from{transform:translateX(-100%)}to{transform:translateX(100%)}}
 
 /* RULES */
-.rules-bg{width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,#4a1532,#240a18);overflow-y:auto;padding:20px}
+.rules-bg{width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,#0a1a2e,#050a14);overflow-y:auto;padding:20px}
 .rules-container{max-width:680px;width:100%;background:rgba(248,165,194,.04);backdrop-filter:blur(20px);border:1px solid rgba(248,165,194,.12);border-radius:28px;padding:32px;animation:floatIn 1s ease}
 @keyframes floatIn{from{transform:translateY(40px);opacity:0}to{transform:translateY(0);opacity:1}}
 .rules-title{font-family:'Cinzel Decorative',serif;font-size:28px;text-align:center;margin-bottom:20px;background:linear-gradient(135deg,#f8a5c2,#87CEEB);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
@@ -108,7 +108,7 @@ html,body{width:100%;height:100%;overflow:hidden;font-family:'Outfit',sans-serif
 .touch-action{width:64px;height:64px;background:rgba(248,165,194,.2);border:2px solid rgba(248,165,194,.3);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:#f8a5c2;cursor:pointer;-webkit-user-select:none;user-select:none}
 
 /* VASE ANIM */
-.vase-anim-bg{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(160deg,#4a1532,#240a18);gap:32px}
+.vase-anim-bg{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(160deg,#0a1a2e,#050a14);gap:32px}
 .vase-anim-title{font-family:'Cinzel Decorative',serif;font-size:30px;background:linear-gradient(135deg,#f8a5c2,#87CEEB);-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:floatIn .8s ease}
 .vases-row{display:flex;gap:18px}.vase-box{width:85px;height:105px;display:flex;align-items:center;justify-content:center;background:rgba(248,165,194,.05);border:2px solid rgba(248,165,194,.15);border-radius:14px;position:relative;transition:all .6s}
 .vase-sprite{transition:all .5s}.vase-box.breaking .vase-sprite{animation:shake .5s ease}.vase-box.broken .vase-sprite{display:none}
@@ -119,7 +119,7 @@ html,body{width:100%;height:100%;overflow:hidden;font-family:'Outfit',sans-serif
 .vase-anim-sub{font-size:15px;color:rgba(255,255,255,.45)}
 
 /* WORDLE */
-.wordle-bg{width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,#4a1532,#240a18);padding:20px}
+.wordle-bg{width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,#0a1a2e,#050a14);padding:20px}
 .wordle-container{text-align:center;max-width:460px;width:100%;animation:floatIn .8s ease}
 .wordle-title{font-family:'Cinzel Decorative',serif;font-size:30px;margin-bottom:6px;background:linear-gradient(135deg,#f8a5c2,#87CEEB);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .wordle-subtitle{color:rgba(255,255,255,.5);margin-bottom:6px;font-size:13px}.wordle-hint{color:#87CEEB;margin-bottom:4px;font-weight:600;font-size:13px}
@@ -139,14 +139,14 @@ html,body{width:100%;height:100%;overflow:hidden;font-family:'Outfit',sans-serif
 .key-btn.wide{min-width:56px;font-size:10px}.key-btn.correct{background:#27ae60}.key-btn.present{background:#f39c12}.key-btn.absent{background:#333;color:#555}
 
 /* CONGRATS */
-.congrats-bg{width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,#4a1532 0%,#240a18 50%,#4a1532 100%);position:relative;overflow:hidden}
+.congrats-bg{width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,#0a1a2e 0%,#050a14 50%,#0a1a2e 100%);position:relative;overflow:hidden}
 .congrats-content{text-align:center;z-index:2}.congrats-title{font-size:68px;animation:bounceIn 1s ease}
 @keyframes bounceIn{0%{transform:scale(0)}50%{transform:scale(1.2)}100%{transform:scale(1)}}
 .congrats-text{font-size:28px;font-weight:700;color:#f8a5c2;margin-top:12px}
 .confetti-piece{position:absolute;width:10px;height:10px;top:-20px;opacity:.9}
 
 /* OFFER - pink & sky blue */
-.offer-bg{width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,#4a1532,#240a18);padding:20px}
+.offer-bg{width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,#0a1a2e,#050a14);padding:20px}
 .offer-container{text-align:center;animation:floatIn 1s ease;max-width:520px}
 .offer-title{font-family:'Cinzel Decorative',serif;font-size:30px;margin-bottom:16px;background:linear-gradient(135deg,#f8a5c2,#87CEEB);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .offer-question{font-size:28px;font-weight:700;margin-bottom:12px;background:linear-gradient(135deg,#fff,#f8a5c2);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
@@ -158,7 +158,7 @@ html,body{width:100%;height:100%;overflow:hidden;font-family:'Outfit',sans-serif
 .btn-no:hover{background:rgba(220,50,50,.3)}
 
 /* FINAL - pink & sky blue */
-.final-bg{width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,#4a1532,#240a18);padding:20px;overflow-y:auto}
+.final-bg{width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,#0a1a2e,#050a14);padding:20px;overflow-y:auto}
 .final-container{max-width:600px;width:100%;animation:floatIn 1s ease;text-align:center}
 .final-title{font-family:'Cinzel Decorative',serif;font-size:32px;margin-bottom:24px;background:linear-gradient(135deg,#f8a5c2,#87CEEB,#f8a5c2);-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:pulse 2s ease infinite}
 .scratch-section{background:rgba(135,206,235,.06);border:1px solid rgba(135,206,235,.15);border-radius:20px;padding:24px}
