@@ -1,10 +1,10 @@
-# Crush Confession 💖
+# Crush Confession 
 
 A fun, interactive mini-game web page to confess to your crush or ask them out!
 
 ---
 
-## 📥 Step 1: Download the Code
+##  Step 1: Download the Code
 
 Before you can change anything, you need to download these files to your computer!
 
@@ -15,7 +15,7 @@ Before you can change anything, you need to download these files to your compute
 
 ---
 
-## 🛠️ Step 2: How to Add Your Details
+##  Step 2: How to Add Your Details
 
 You do **not** need to know how to code! Just follow these steps:
 
@@ -34,7 +34,7 @@ You do **not** need to know how to code! Just follow these steps:
 
 ---
 
-## 💻 Step 3: Test It Yourself
+##  Step 3: Test It Yourself
 
 Want to see how it looks?
 1. Find the file named **`index.html`** in your folder.
@@ -43,7 +43,7 @@ Want to see how it looks?
 
 ---
 
-## 🚀 Step 4: Send It To Your Crush
+##  Step 4: Send It To Your Crush
 
 To send this to your crush, it needs to be on the internet (not just on your computer). Here is the easiest way to do it for free:
 
